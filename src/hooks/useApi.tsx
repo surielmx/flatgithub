@@ -51,7 +51,7 @@ function useApi() {
 					data: await instance.json(),
 				});
 			} catch (error: any) {
-				const { response = {}, message = '' } = error || {};
+				const { response = {} } = error || {};
 				setStatusQuery({
 					isLoading: false,
 					isError: true,
